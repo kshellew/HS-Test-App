@@ -26,7 +26,7 @@ function App() {
       <Heading level="h4">Hi, {userEmail}</Heading>
       <br />
       <Button size="sm" onClick={onClick}>
-        Click me
+        EASY
       </Button>
     </div>
   );
