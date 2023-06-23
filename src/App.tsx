@@ -20,13 +20,12 @@ function App() {
 
   function playAudio() {
     audio.play();
-    console.log("woo");
   }
 
   return (
     <div className="App">
       <DefaultStyle />
-      <button size="sm" onClick={playAudio}>
+      <button onClick={playAudio}>
         EASY
       </button>
     </div>
