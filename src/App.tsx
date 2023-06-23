@@ -1,6 +1,7 @@
 import HelpScout, { NOTIFICATION_TYPES } from "@helpscout/javascript-sdk";
 import { Button, DefaultStyle, Heading } from "@helpscout/ui-kit";
 import { useEffect, useState,} from "react";
+import './App.css';
 
 
 function App() {
@@ -10,23 +11,24 @@ function App() {
   const [userEmail, setUserEmail] = useState<string | undefined>(
     "unknown user"
   );
-
+/*
   useEffect(() => {
     HelpScout.getApplicationContext().then(({ user }) =>
       setUserEmail(user?.email)
     );
-  }, []);
+  }, []); */
 
   function playAudio() {
-    audio.play()
+    audio.play();
+    console.log("woo");
   }
 
   return (
     <div className="App">
       <DefaultStyle />
-      <Button size="sm" onClick={playAudio}>
+      <button size="sm" onClick={playAudio}>
         EASY
-      </Button>
+      </button>
     </div>
   );
 }
